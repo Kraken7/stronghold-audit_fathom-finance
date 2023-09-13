@@ -1,0 +1,176 @@
+{
+  "contractName": "IFathomCentralizedOracle",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastUpdate",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lastUpdate\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/IFathomCentralizedOracle.sol\":\"IFathomCentralizedOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/main/interfaces/IFathomCentralizedOracle.sol\":{\"keccak256\":\"0xcde091faaa79eccfb54ab3aac675f72e54d6629df146ba42a28427548a75df58\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://46a013bf2f2bfaa0ef125d8b80e851f847c0f179aa444a43feb718999cccfa21\",\"dweb:/ipfs/QmbtcUyWejthKx9w8TrZXJMSFxVKU2Dyak9yYLpmoiNE4w\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.17;\n\ninterface IFathomCentralizedOracle {\n    function getPrice() external view returns (uint256 price, uint256 lastUpdate);\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/IFathomCentralizedOracle.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/IFathomCentralizedOracle.sol",
+    "exportedSymbols": {
+      "IFathomCentralizedOracle": [
+        7805
+      ]
+    },
+    "id": 7806,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7797,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:50"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IFathomCentralizedOracle",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7805,
+        "linearizedBaseContracts": [
+          7805
+        ],
+        "name": "IFathomCentralizedOracle",
+        "nameLocation": "67:24:50",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "98d5fdca",
+            "id": 7804,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPrice",
+            "nameLocation": "107:8:50",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7798,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:50"
+            },
+            "returnParameters": {
+              "id": 7803,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7800,
+                  "mutability": "mutable",
+                  "name": "price",
+                  "nameLocation": "149:5:50",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7804,
+                  "src": "141:13:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7799,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "141:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7802,
+                  "mutability": "mutable",
+                  "name": "lastUpdate",
+                  "nameLocation": "164:10:50",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7804,
+                  "src": "156:18:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7801,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "156:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "140:35:50"
+            },
+            "scope": 7805,
+            "src": "98:78:50",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7806,
+        "src": "57:121:50",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:147:50"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.409Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

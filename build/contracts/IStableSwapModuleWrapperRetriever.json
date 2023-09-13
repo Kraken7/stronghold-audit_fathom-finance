@@ -1,0 +1,426 @@
+{
+  "contractName": "IStableSwapModuleWrapperRetriever",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "stablecoin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stableSwapModule",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isDecentralizedState",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalValueDeposited",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"isDecentralizedState\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stableSwapModule\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stablecoin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalValueDeposited\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"This interface is only used to retrieve values from stableswap module wrapper so that variables public but not in interface can be fetched\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/IStableSwapModuleWrapperRetriever.sol\":\"IStableSwapModuleWrapperRetriever\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/main/interfaces/IStableSwapModuleWrapperRetriever.sol\":{\"keccak256\":\"0x7d77a30f019ad32471036d3666e69677791ab0115ca25a80d14c372c48fe8378\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://174244bc4dc820237bce8b394296eb668899b49883a75a29a2b08f2023186c4e\",\"dweb:/ipfs/Qmd8fGikhKtNVE43cYxLhm6kjfcQrejHm7hywjdj5T7mjU\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\n///This interface is only used to retrieve values from stableswap module wrapper so that variables public but not in interface can be fetched\ninterface IStableSwapModuleWrapperRetriever {\n    function stablecoin() external view returns (address);\n    function token() external view returns (address);\n    function stableSwapModule() external view returns (address);\n    function isDecentralizedState() external view returns (bool);\n    function totalValueDeposited() external view returns (uint256);\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/IStableSwapModuleWrapperRetriever.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/IStableSwapModuleWrapperRetriever.sol",
+    "exportedSymbols": {
+      "IStableSwapModuleWrapperRetriever": [
+        8394
+      ]
+    },
+    "id": 8395,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8367,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:68"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStableSwapModuleWrapperRetriever",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 8368,
+          "nodeType": "StructuredDocumentation",
+          "src": "71:142:68",
+          "text": "This interface is only used to retrieve values from stableswap module wrapper so that variables public but not in interface can be fetched"
+        },
+        "fullyImplemented": false,
+        "id": 8394,
+        "linearizedBaseContracts": [
+          8394
+        ],
+        "name": "IStableSwapModuleWrapperRetriever",
+        "nameLocation": "223:33:68",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "e9cbd822",
+            "id": 8373,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stablecoin",
+            "nameLocation": "272:10:68",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8369,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "282:2:68"
+            },
+            "returnParameters": {
+              "id": 8372,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8371,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8373,
+                  "src": "308:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8370,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "308:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "307:9:68"
+            },
+            "scope": 8394,
+            "src": "263:54:68",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "fc0c546a",
+            "id": 8378,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "token",
+            "nameLocation": "331:5:68",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8374,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "336:2:68"
+            },
+            "returnParameters": {
+              "id": 8377,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8376,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8378,
+                  "src": "362:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8375,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "362:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "361:9:68"
+            },
+            "scope": 8394,
+            "src": "322:49:68",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "a8c8240d",
+            "id": 8383,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stableSwapModule",
+            "nameLocation": "385:16:68",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8379,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "401:2:68"
+            },
+            "returnParameters": {
+              "id": 8382,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8381,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8383,
+                  "src": "427:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8380,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "427:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "426:9:68"
+            },
+            "scope": 8394,
+            "src": "376:60:68",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "15eadbff",
+            "id": 8388,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isDecentralizedState",
+            "nameLocation": "450:20:68",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8384,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "470:2:68"
+            },
+            "returnParameters": {
+              "id": 8387,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8386,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8388,
+                  "src": "496:4:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 8385,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "496:4:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "495:6:68"
+            },
+            "scope": 8394,
+            "src": "441:61:68",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "86eb5133",
+            "id": 8393,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalValueDeposited",
+            "nameLocation": "516:19:68",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8389,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "535:2:68"
+            },
+            "returnParameters": {
+              "id": 8392,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8391,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8393,
+                  "src": "561:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8390,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "561:7:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "560:9:68"
+            },
+            "scope": 8394,
+            "src": "507:63:68",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8395,
+        "src": "213:359:68",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:527:68"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.413Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "notice": "This interface is only used to retrieve values from stableswap module wrapper so that variables public but not in interface can be fetched",
+    "version": 1
+  }
+}

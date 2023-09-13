@@ -1,0 +1,34 @@
+{
+    "0x1109261cb5084ac00106245b276dec37da84e6c45a09688109bc3709f62b9c6d": {
+        "interface": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/price-feeders/CentralizedOraclePriceFeed.sol",
+        "address": "0x7256586d3cf41aA4882C067f48E1C69613b4270B",
+        "action": "peekPrice",
+        "args": "[]",
+        "txHash": "0xc01df497f629e34307e3c9c6127299fa023dad7428719bd5d93a56b5a2c7d2ec",
+        "nonce": 654
+    },
+    "0xe89fb42ac878b347c6ad296e559c2de70dfa3e5761755eed40036c6fe7336bc9": {
+        "interface": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/stablecoin-core/config/CollateralPoolConfig.sol",
+        "address": "0xaF45412444a445d4580c8642A569E146399c1484",
+        "action": "initCollateralPool",
+        "args": "[\"0x5844430000000000000000000000000000000000000000000000000000000000\",{\"type\":\"BigNumber\",\"hex\":\"0x0d5d238a4abe9806872a4904598d6d88000000000000\"},0,{\"type\":\"BigNumber\",\"hex\":\"0x22361d8afcc93343e962029a7edab2000000000000\"},\"0x7256586d3cf41aA4882C067f48E1C69613b4270B\",\"1330000000000000000000000000\",{\"type\":\"BigNumber\",\"hex\":\"0x033b2e3ca88761c99baf1533\"},\"0x907C4A8935f7474C03f4383c355Fe64B64c97bE6\",{\"type\":\"BigNumber\",\"hex\":\"0x1388\"},{\"type\":\"BigNumber\",\"hex\":\"0x2904\"},{\"type\":\"BigNumber\",\"hex\":\"0x1f40\"},\"0xf07D6646a354242934b2bDf12337835f1C5A562C\"]",
+        "txHash": "0x1772ccf73df4dd9ed3d1e2fdf9fb2b019e1120444742311197a5dc1e0f1aa0b6",
+        "nonce": 655
+    },
+    "0x231ca3f26ac05557939cb60d6ec79e4693762c04d8fbf159a36d9a40ae37d819": {
+        "interface": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/stablecoin-core/PriceOracle.sol",
+        "address": "0x4c3683673E9b74Be7449C2FB94cfa325fF1b2539",
+        "action": "setPrice",
+        "args": "[\"0x5844430000000000000000000000000000000000000000000000000000000000\"]",
+        "txHash": "0x8abeb799ea2e7f131c3882999c3fbfeeea44e31861c4e3c758e671da8adc400d",
+        "nonce": 656
+    },
+    "0xb2141c898808c2fb2f4c66c6dab434494aa7ee3fa70eadee32a4f59e718cf594": {
+        "interface": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/stablecoin-core/BookKeeper.sol",
+        "address": "0x120A980b31ab60e90DD57f0F0e1f3203394062E8",
+        "action": "setTotalDebtCeiling",
+        "args": "[{\"type\":\"BigNumber\",\"hex\":\"0x1aba4714957d300d0e549208b31adb10000000000000\"}]",
+        "txHash": "0xf2a87f94821179907fdb2110a1974c764d6aed882725239faa3da26188cece9f",
+        "nonce": 657
+    }
+}

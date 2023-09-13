@@ -1,0 +1,751 @@
+{
+  "contractName": "IStableSwapModuleWrapper",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "claimFeesRewards",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawClaimedFees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAmounts",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getActualLiquidityAvailablePerUser",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "emergencyWithdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getClaimableFeesPerUser",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"claimFeesRewards\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"depositTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"emergencyWithdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"getActualLiquidityAvailablePerUser\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"getAmounts\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"getClaimableFeesPerUser\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawClaimedFees\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"withdrawTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/IStableSwapModuleWrapper.sol\":\"IStableSwapModuleWrapper\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol\":{\"keccak256\":\"0xb8f5302f12138c5561362e88a78d061573e6298b7a1a5afe84a1e2c8d4d5aeaa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://740cf4dc535e3082560cf5a031473029f322690fc8037fe9d5e3a8bef42e757c\",\"dweb:/ipfs/QmTQxFdfxcaueQa23VX34wAPqzruZbkzyeN58tZK2yav2b\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5\",\"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53\"]},\"project:/contracts/main/interfaces/IAccessControlConfig.sol\":{\"keccak256\":\"0xee3f9dc79c9559b1740bc2088ac999019bf673bbc4b998cc4661007a38a745ed\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://be8b305932160086cc67492d95856668d0cca8ca9842f1526df083314b6938af\",\"dweb:/ipfs/Qmb6BFKPkVjno7USwiRHhpftq1SUaxPkKBMYbF7UteY7G7\"]},\"project:/contracts/main/interfaces/IBookKeeper.sol\":{\"keccak256\":\"0x87baeab59aa886a00e948b006fa892a5bf5feae10ba3e0ce228d8e6d815e5f89\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://a87dab01bb1df940fd987deed75a16144319bbf5d13dfa304fc126cad9cfa210\",\"dweb:/ipfs/QmYZwVk7JUUdinPuVwwyKeXxc8nmMW5ndTppwZSyNtKKo9\"]},\"project:/contracts/main/interfaces/ICollateralPoolConfig.sol\":{\"keccak256\":\"0x7b5f319d5bbca40d7756c730f7793132a686cad51477b2a3437bfb68174cdb50\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://942b9216811d7e0b6f6d5601f0c7f4c8db12a99df6b2d91a8d5286a82fd99073\",\"dweb:/ipfs/QmSRmcNm8KgGDPgd8dZGbVd4PB4NFMvYTSqCsheGT3HQef\"]},\"project:/contracts/main/interfaces/IStableSwapModuleWrapper.sol\":{\"keccak256\":\"0x8d0ab9f7f6ae26a698edc588f264277f16517742dbdbba62982f3f1e889dba24\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://8cbf8ee8b2a4aa2c3ae221c47496b3140acbad9fa08da83a0c814f04ee6ef8e8\",\"dweb:/ipfs/QmeWsZJzHJHy1TTqZqT51LEjwmFFRUaffw3dF1muf7WypH\"]},\"project:/contracts/main/interfaces/IStablecoin.sol\":{\"keccak256\":\"0xa7609e33bae9840636786b1bd94a8428159fbebf1f59094196aca21f240d1b47\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://b5a13aa8a8a50178acc0526d22fd20895d4c986bf5c4187ae66c8485d45ce2e8\",\"dweb:/ipfs/QmSG58wYm4Fzt1mMWZrstTyZzD3VdS2vcsWv1nNtJVVhmV\"]},\"project:/contracts/main/interfaces/IStablecoinAdapter.sol\":{\"keccak256\":\"0x47314d59e21914f547da99d075971ca02e1c5855d0186e104355c5b5c6796c2f\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://2bf3931a79dee91be6a69a898b1238050363690e823d960d7b1e9e4e2d3ebcf6\",\"dweb:/ipfs/QmTA4iZRReHifMGqmRwrDohKfhiCitFuynNyMxzcJj4LHF\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\nimport \"../interfaces/IStablecoinAdapter.sol\";\n\ninterface IStableSwapModuleWrapper {\n    function depositTokens(uint256 _amount) external;\n\n    function withdrawTokens(uint256 _amount) external;\n    function claimFeesRewards() external;\n    function withdrawClaimedFees() external;\n    function getAmounts(uint256 _amount) external view returns (uint256,uint256);\n    function getActualLiquidityAvailablePerUser(address account) external view returns(uint256, uint256);\n    function emergencyWithdraw() external;\n    function getClaimableFeesPerUser(address account) external view returns (uint256, uint256);\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/IStableSwapModuleWrapper.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/IStableSwapModuleWrapper.sol",
+    "exportedSymbols": {
+      "IAccessControlConfig": [
+        7225
+      ],
+      "IAccessControlUpgradeable": [
+        408
+      ],
+      "IBookKeeper": [
+        7414
+      ],
+      "ICollateralPoolConfig": [
+        7684
+      ],
+      "IERC20": [
+        4531
+      ],
+      "IStableSwapModuleWrapper": [
+        8365
+      ],
+      "IStablecoin": [
+        8471
+      ],
+      "IStablecoinAdapter": [
+        8515
+      ]
+    },
+    "id": 8366,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8317,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:67"
+      },
+      {
+        "absolutePath": "project:/contracts/main/interfaces/IStablecoinAdapter.sol",
+        "file": "../interfaces/IStablecoinAdapter.sol",
+        "id": 8318,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8366,
+        "sourceUnit": 8516,
+        "src": "71:46:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStableSwapModuleWrapper",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 8365,
+        "linearizedBaseContracts": [
+          8365
+        ],
+        "name": "IStableSwapModuleWrapper",
+        "nameLocation": "129:24:67",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "dd49756e",
+            "id": 8323,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositTokens",
+            "nameLocation": "169:13:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8321,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8320,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "191:7:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8323,
+                  "src": "183:15:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8319,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "183:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "182:17:67"
+            },
+            "returnParameters": {
+              "id": 8322,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "208:0:67"
+            },
+            "scope": 8365,
+            "src": "160:49:67",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "315a095d",
+            "id": 8328,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawTokens",
+            "nameLocation": "224:14:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8326,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8325,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "247:7:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8328,
+                  "src": "239:15:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8324,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "239:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "238:17:67"
+            },
+            "returnParameters": {
+              "id": 8327,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "264:0:67"
+            },
+            "scope": 8365,
+            "src": "215:50:67",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9e7fda49",
+            "id": 8331,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claimFeesRewards",
+            "nameLocation": "279:16:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8329,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "295:2:67"
+            },
+            "returnParameters": {
+              "id": 8330,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "306:0:67"
+            },
+            "scope": 8365,
+            "src": "270:37:67",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "d9d68e66",
+            "id": 8334,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawClaimedFees",
+            "nameLocation": "321:19:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8332,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "340:2:67"
+            },
+            "returnParameters": {
+              "id": 8333,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "351:0:67"
+            },
+            "scope": 8365,
+            "src": "312:40:67",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "59f7cf50",
+            "id": 8343,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAmounts",
+            "nameLocation": "366:10:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8337,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8336,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "385:7:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8343,
+                  "src": "377:15:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8335,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "377:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "376:17:67"
+            },
+            "returnParameters": {
+              "id": 8342,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8339,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8343,
+                  "src": "417:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8338,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "417:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8341,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8343,
+                  "src": "425:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8340,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "425:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "416:17:67"
+            },
+            "scope": 8365,
+            "src": "357:77:67",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2ed1e672",
+            "id": 8352,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getActualLiquidityAvailablePerUser",
+            "nameLocation": "448:34:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8346,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8345,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "491:7:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8352,
+                  "src": "483:15:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8344,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "483:7:67",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "482:17:67"
+            },
+            "returnParameters": {
+              "id": 8351,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8348,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8352,
+                  "src": "522:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8347,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "522:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8350,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8352,
+                  "src": "531:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8349,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "531:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "521:18:67"
+            },
+            "scope": 8365,
+            "src": "439:101:67",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "db2e21bc",
+            "id": 8355,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "emergencyWithdraw",
+            "nameLocation": "554:17:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8353,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "571:2:67"
+            },
+            "returnParameters": {
+              "id": 8354,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "582:0:67"
+            },
+            "scope": 8365,
+            "src": "545:38:67",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2b7a880d",
+            "id": 8364,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getClaimableFeesPerUser",
+            "nameLocation": "597:23:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8358,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8357,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "629:7:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8364,
+                  "src": "621:15:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8356,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "621:7:67",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "620:17:67"
+            },
+            "returnParameters": {
+              "id": 8363,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8360,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8364,
+                  "src": "661:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8359,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "661:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8362,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8364,
+                  "src": "670:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8361,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "670:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "660:18:67"
+            },
+            "scope": 8365,
+            "src": "588:91:67",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8366,
+        "src": "119:562:67",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:636:67"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.413Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "contractName": "IShowStopper",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralPoolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "positionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "collateralReceiver",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "redeemLockedCollateral",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "live",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"live\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralPoolId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"positionAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"collateralReceiver\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"redeemLockedCollateral\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/IShowStopper.sol\":\"IShowStopper\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/main/interfaces/IGenericTokenAdapter.sol\":{\"keccak256\":\"0x2b4327732b7fffe0351c966605f4693a51d51fad0cc64eb9365e5ee1f439cc72\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://8eb8f64b8cde5aa3d546c01114ff8322fadf14154452f0582cd1d8c36dbeb411\",\"dweb:/ipfs/QmZmppsbcyPHN9bXUeCE4BfXdC3fA7UT9wxmRMuvbpxZYh\"]},\"project:/contracts/main/interfaces/IShowStopper.sol\":{\"keccak256\":\"0xcdd2a36f56fd2c410f9d7bbd3a2aa04da8b17692bdba006d7195d18b3069ac74\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://499803c03827870dacd2cd033db50eff2c0520ab17e153369521176e36ca30b1\",\"dweb:/ipfs/QmakRe49KgWStuw9R6pRPHoVj29gofXG72MaHDwXB29BrP\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\nimport \"../interfaces/IGenericTokenAdapter.sol\";\n\ninterface IShowStopper {\n    function redeemLockedCollateral(\n        bytes32 collateralPoolId,\n        address positionAddress,\n        address collateralReceiver,\n        bytes calldata data\n    ) external;\n\n    function live() external view returns (uint256);\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/IShowStopper.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/IShowStopper.sol",
+    "exportedSymbols": {
+      "IGenericTokenAdapter": [
+        7890
+      ],
+      "IShowStopper": [
+        8233
+      ]
+    },
+    "id": 8234,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8215,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:64"
+      },
+      {
+        "absolutePath": "project:/contracts/main/interfaces/IGenericTokenAdapter.sol",
+        "file": "../interfaces/IGenericTokenAdapter.sol",
+        "id": 8216,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8234,
+        "sourceUnit": 7891,
+        "src": "71:48:64",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IShowStopper",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 8233,
+        "linearizedBaseContracts": [
+          8233
+        ],
+        "name": "IShowStopper",
+        "nameLocation": "131:12:64",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "ef45eb98",
+            "id": 8227,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "redeemLockedCollateral",
+            "nameLocation": "159:22:64",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8225,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8218,
+                  "mutability": "mutable",
+                  "name": "collateralPoolId",
+                  "nameLocation": "199:16:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8227,
+                  "src": "191:24:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8217,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "191:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8220,
+                  "mutability": "mutable",
+                  "name": "positionAddress",
+                  "nameLocation": "233:15:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8227,
+                  "src": "225:23:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8219,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "225:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8222,
+                  "mutability": "mutable",
+                  "name": "collateralReceiver",
+                  "nameLocation": "266:18:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8227,
+                  "src": "258:26:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8221,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "258:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8224,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "309:4:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8227,
+                  "src": "294:19:64",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 8223,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "294:5:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "181:138:64"
+            },
+            "returnParameters": {
+              "id": 8226,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "328:0:64"
+            },
+            "scope": 8233,
+            "src": "150:179:64",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "957aa58c",
+            "id": 8232,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "live",
+            "nameLocation": "344:4:64",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8228,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "348:2:64"
+            },
+            "returnParameters": {
+              "id": 8231,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8230,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8232,
+                  "src": "374:7:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8229,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "374:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "373:9:64"
+            },
+            "scope": 8233,
+            "src": "335:48:64",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8234,
+        "src": "121:264:64",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:340:64"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.412Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "contractName": "IStablecoinAdapter",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "bookKeeper",
+      "outputs": [
+        {
+          "internalType": "contract IBookKeeper",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stablecoin",
+      "outputs": [
+        {
+          "internalType": "contract IStablecoin",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "positionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "positionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rad",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "depositRAD",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "positionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"bookKeeper\",\"outputs\":[{\"internalType\":\"contract IBookKeeper\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"positionAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"positionAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"rad\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"depositRAD\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stablecoin\",\"outputs\":[{\"internalType\":\"contract IStablecoin\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"positionAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/IStablecoinAdapter.sol\":\"IStablecoinAdapter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol\":{\"keccak256\":\"0xb8f5302f12138c5561362e88a78d061573e6298b7a1a5afe84a1e2c8d4d5aeaa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://740cf4dc535e3082560cf5a031473029f322690fc8037fe9d5e3a8bef42e757c\",\"dweb:/ipfs/QmTQxFdfxcaueQa23VX34wAPqzruZbkzyeN58tZK2yav2b\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5\",\"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53\"]},\"project:/contracts/main/interfaces/IAccessControlConfig.sol\":{\"keccak256\":\"0xee3f9dc79c9559b1740bc2088ac999019bf673bbc4b998cc4661007a38a745ed\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://be8b305932160086cc67492d95856668d0cca8ca9842f1526df083314b6938af\",\"dweb:/ipfs/Qmb6BFKPkVjno7USwiRHhpftq1SUaxPkKBMYbF7UteY7G7\"]},\"project:/contracts/main/interfaces/IBookKeeper.sol\":{\"keccak256\":\"0x87baeab59aa886a00e948b006fa892a5bf5feae10ba3e0ce228d8e6d815e5f89\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://a87dab01bb1df940fd987deed75a16144319bbf5d13dfa304fc126cad9cfa210\",\"dweb:/ipfs/QmYZwVk7JUUdinPuVwwyKeXxc8nmMW5ndTppwZSyNtKKo9\"]},\"project:/contracts/main/interfaces/ICollateralPoolConfig.sol\":{\"keccak256\":\"0x7b5f319d5bbca40d7756c730f7793132a686cad51477b2a3437bfb68174cdb50\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://942b9216811d7e0b6f6d5601f0c7f4c8db12a99df6b2d91a8d5286a82fd99073\",\"dweb:/ipfs/QmSRmcNm8KgGDPgd8dZGbVd4PB4NFMvYTSqCsheGT3HQef\"]},\"project:/contracts/main/interfaces/IStablecoin.sol\":{\"keccak256\":\"0xa7609e33bae9840636786b1bd94a8428159fbebf1f59094196aca21f240d1b47\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://b5a13aa8a8a50178acc0526d22fd20895d4c986bf5c4187ae66c8485d45ce2e8\",\"dweb:/ipfs/QmSG58wYm4Fzt1mMWZrstTyZzD3VdS2vcsWv1nNtJVVhmV\"]},\"project:/contracts/main/interfaces/IStablecoinAdapter.sol\":{\"keccak256\":\"0x47314d59e21914f547da99d075971ca02e1c5855d0186e104355c5b5c6796c2f\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://2bf3931a79dee91be6a69a898b1238050363690e823d960d7b1e9e4e2d3ebcf6\",\"dweb:/ipfs/QmTA4iZRReHifMGqmRwrDohKfhiCitFuynNyMxzcJj4LHF\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\nimport \"../interfaces/IBookKeeper.sol\";\nimport \"../interfaces/IStablecoin.sol\";\n\ninterface IStablecoinAdapter {\n    function bookKeeper() external returns (IBookKeeper);\n\n    function stablecoin() external returns (IStablecoin);\n\n    function deposit(address positionAddress, uint256 wad, bytes calldata data) external;\n\n    function depositRAD(address positionAddress, uint256 rad, bytes calldata data) external;\n\n    function withdraw(address positionAddress, uint256 wad, bytes calldata data) external;\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/IStablecoinAdapter.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/IStablecoinAdapter.sol",
+    "exportedSymbols": {
+      "IAccessControlConfig": [
+        7225
+      ],
+      "IAccessControlUpgradeable": [
+        408
+      ],
+      "IBookKeeper": [
+        7414
+      ],
+      "ICollateralPoolConfig": [
+        7684
+      ],
+      "IERC20": [
+        4531
+      ],
+      "IStablecoin": [
+        8471
+      ],
+      "IStablecoinAdapter": [
+        8515
+      ]
+    },
+    "id": 8516,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8473,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:71"
+      },
+      {
+        "absolutePath": "project:/contracts/main/interfaces/IBookKeeper.sol",
+        "file": "../interfaces/IBookKeeper.sol",
+        "id": 8474,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8516,
+        "sourceUnit": 7415,
+        "src": "71:39:71",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/main/interfaces/IStablecoin.sol",
+        "file": "../interfaces/IStablecoin.sol",
+        "id": 8475,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8516,
+        "sourceUnit": 8472,
+        "src": "111:39:71",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStablecoinAdapter",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 8515,
+        "linearizedBaseContracts": [
+          8515
+        ],
+        "name": "IStablecoinAdapter",
+        "nameLocation": "162:18:71",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "e3b3932a",
+            "id": 8481,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bookKeeper",
+            "nameLocation": "196:10:71",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8476,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "206:2:71"
+            },
+            "returnParameters": {
+              "id": 8480,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8479,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8481,
+                  "src": "227:11:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBookKeeper_$7414",
+                    "typeString": "contract IBookKeeper"
+                  },
+                  "typeName": {
+                    "id": 8478,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 8477,
+                      "name": "IBookKeeper",
+                      "nameLocations": [
+                        "227:11:71"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7414,
+                      "src": "227:11:71"
+                    },
+                    "referencedDeclaration": 7414,
+                    "src": "227:11:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBookKeeper_$7414",
+                      "typeString": "contract IBookKeeper"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "226:13:71"
+            },
+            "scope": 8515,
+            "src": "187:53:71",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "e9cbd822",
+            "id": 8487,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stablecoin",
+            "nameLocation": "255:10:71",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "265:2:71"
+            },
+            "returnParameters": {
+              "id": 8486,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8485,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8487,
+                  "src": "286:11:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IStablecoin_$8471",
+                    "typeString": "contract IStablecoin"
+                  },
+                  "typeName": {
+                    "id": 8484,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 8483,
+                      "name": "IStablecoin",
+                      "nameLocations": [
+                        "286:11:71"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 8471,
+                      "src": "286:11:71"
+                    },
+                    "referencedDeclaration": 8471,
+                    "src": "286:11:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IStablecoin_$8471",
+                      "typeString": "contract IStablecoin"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "285:13:71"
+            },
+            "scope": 8515,
+            "src": "246:53:71",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "49bdc2b8",
+            "id": 8496,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "314:7:71",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8494,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8489,
+                  "mutability": "mutable",
+                  "name": "positionAddress",
+                  "nameLocation": "330:15:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8496,
+                  "src": "322:23:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8488,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "322:7:71",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8491,
+                  "mutability": "mutable",
+                  "name": "wad",
+                  "nameLocation": "355:3:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8496,
+                  "src": "347:11:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8490,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "347:7:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8493,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "375:4:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8496,
+                  "src": "360:19:71",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 8492,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "360:5:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "321:59:71"
+            },
+            "returnParameters": {
+              "id": 8495,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "389:0:71"
+            },
+            "scope": 8515,
+            "src": "305:85:71",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "653623ab",
+            "id": 8505,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositRAD",
+            "nameLocation": "405:10:71",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8503,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8498,
+                  "mutability": "mutable",
+                  "name": "positionAddress",
+                  "nameLocation": "424:15:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8505,
+                  "src": "416:23:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8497,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "416:7:71",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8500,
+                  "mutability": "mutable",
+                  "name": "rad",
+                  "nameLocation": "449:3:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8505,
+                  "src": "441:11:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8499,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:7:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8502,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "469:4:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8505,
+                  "src": "454:19:71",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 8501,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "454:5:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "415:59:71"
+            },
+            "returnParameters": {
+              "id": 8504,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "483:0:71"
+            },
+            "scope": 8515,
+            "src": "396:88:71",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "31f09265",
+            "id": 8514,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "499:8:71",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8512,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8507,
+                  "mutability": "mutable",
+                  "name": "positionAddress",
+                  "nameLocation": "516:15:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8514,
+                  "src": "508:23:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8506,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "508:7:71",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8509,
+                  "mutability": "mutable",
+                  "name": "wad",
+                  "nameLocation": "541:3:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8514,
+                  "src": "533:11:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8508,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:7:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8511,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "561:4:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8514,
+                  "src": "546:19:71",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 8510,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "546:5:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "507:59:71"
+            },
+            "returnParameters": {
+              "id": 8513,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "575:0:71"
+            },
+            "scope": 8515,
+            "src": "490:86:71",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8516,
+        "src": "152:426:71",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:533:71"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.414Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

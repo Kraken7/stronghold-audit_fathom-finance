@@ -1,0 +1,425 @@
+{
+  "contractName": "ICollateralAdapter",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "positionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "positionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateralPoolId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"collateralPoolId\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"positionAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"positionAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/ICollateralAdapter.sol\":\"ICollateralAdapter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/main/interfaces/ICollateralAdapter.sol\":{\"keccak256\":\"0x15ab0f1dcddf45596dfecfc27091687e69f8cb8a520b7bd08f4c7afb1b72b083\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://99ee1e2abf2198206d622f2ea3170c0ec522b1d79446d70a81dae3db21b6f908\",\"dweb:/ipfs/QmdPaCyySxCbFwLcrFST1PamZ2UcFVKKywkFYpgYcmbKDT\"]},\"project:/contracts/main/interfaces/IToken.sol\":{\"keccak256\":\"0x50c553337a022a67bff6f74d87ea77689c6a4dd68f77c37c87caebd9d52d110f\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://586df6a53ef7ddc0cae458a24a9209924a1b097e8aa900c976ae731ac64bf4eb\",\"dweb:/ipfs/QmU6xqVSxq5tGhjtZGGeCightFMnc8D17Pw1GSAWmkWAzE\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\nimport \"../interfaces/IToken.sol\";\n\ninterface ICollateralAdapter {\n    function deposit(address positionAddress, uint256 wad, bytes calldata data) external;\n\n    function withdraw(address positionAddress, uint256 wad, bytes calldata data) external;\n\n    function collateralPoolId() external view returns (bytes32);\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/ICollateralAdapter.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/ICollateralAdapter.sol",
+    "exportedSymbols": {
+      "ICollateralAdapter": [
+        7483
+      ],
+      "IToken": [
+        8572
+      ]
+    },
+    "id": 7484,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7458,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:44"
+      },
+      {
+        "absolutePath": "project:/contracts/main/interfaces/IToken.sol",
+        "file": "../interfaces/IToken.sol",
+        "id": 7459,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 7484,
+        "sourceUnit": 8573,
+        "src": "71:34:44",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ICollateralAdapter",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7483,
+        "linearizedBaseContracts": [
+          7483
+        ],
+        "name": "ICollateralAdapter",
+        "nameLocation": "117:18:44",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "49bdc2b8",
+            "id": 7468,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "151:7:44",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7466,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7461,
+                  "mutability": "mutable",
+                  "name": "positionAddress",
+                  "nameLocation": "167:15:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7468,
+                  "src": "159:23:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7460,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "159:7:44",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7463,
+                  "mutability": "mutable",
+                  "name": "wad",
+                  "nameLocation": "192:3:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7468,
+                  "src": "184:11:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7462,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7465,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "212:4:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7468,
+                  "src": "197:19:44",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7464,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:5:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "158:59:44"
+            },
+            "returnParameters": {
+              "id": 7467,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "226:0:44"
+            },
+            "scope": 7483,
+            "src": "142:85:44",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "31f09265",
+            "id": 7477,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "242:8:44",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7475,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7470,
+                  "mutability": "mutable",
+                  "name": "positionAddress",
+                  "nameLocation": "259:15:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7477,
+                  "src": "251:23:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7469,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "251:7:44",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7472,
+                  "mutability": "mutable",
+                  "name": "wad",
+                  "nameLocation": "284:3:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7477,
+                  "src": "276:11:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7471,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "276:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7474,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "304:4:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7477,
+                  "src": "289:19:44",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7473,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "289:5:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "250:59:44"
+            },
+            "returnParameters": {
+              "id": 7476,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "318:0:44"
+            },
+            "scope": 7483,
+            "src": "233:86:44",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "dca07dc5",
+            "id": 7482,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "collateralPoolId",
+            "nameLocation": "334:16:44",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7478,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "350:2:44"
+            },
+            "returnParameters": {
+              "id": 7481,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7480,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7482,
+                  "src": "376:7:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7479,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:9:44"
+            },
+            "scope": 7483,
+            "src": "325:60:44",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7484,
+        "src": "107:280:44",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:342:44"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.407Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

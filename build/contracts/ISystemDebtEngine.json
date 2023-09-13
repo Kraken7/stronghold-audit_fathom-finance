@@ -1,0 +1,212 @@
+{
+  "contractName": "ISystemDebtEngine",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "settleSystemBadDebt",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "surplusBuffer",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"settleSystemBadDebt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"surplusBuffer\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/ISystemDebtEngine.sol\":\"ISystemDebtEngine\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/main/interfaces/ISystemDebtEngine.sol\":{\"keccak256\":\"0xdea42a6a4bdaa0d05cf187f1a1aa2b3b49ae5bccece43953b30342660037078e\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://f1ca0e9a4a82970b6e681fb0db3fc39f456c673ccb0957ec079c42c907da80ca\",\"dweb:/ipfs/QmXuPaGUT1xgCHJjDgty8w1pRSebeZ5vJondom5BW3T9FC\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\ninterface ISystemDebtEngine {\n    function settleSystemBadDebt(uint256 value) external; // [rad]\n\n    function surplusBuffer() external view returns (uint256); // [rad]\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/ISystemDebtEngine.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/ISystemDebtEngine.sol",
+    "exportedSymbols": {
+      "ISystemDebtEngine": [
+        8528
+      ]
+    },
+    "id": 8529,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8517,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:72"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISystemDebtEngine",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 8528,
+        "linearizedBaseContracts": [
+          8528
+        ],
+        "name": "ISystemDebtEngine",
+        "nameLocation": "81:17:72",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "815110ec",
+            "id": 8522,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "settleSystemBadDebt",
+            "nameLocation": "114:19:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8520,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8519,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "142:5:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8522,
+                  "src": "134:13:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8518,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "134:7:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:15:72"
+            },
+            "returnParameters": {
+              "id": 8521,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "157:0:72"
+            },
+            "scope": 8528,
+            "src": "105:53:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2a608d5b",
+            "id": 8527,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "surplusBuffer",
+            "nameLocation": "182:13:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8523,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "195:2:72"
+            },
+            "returnParameters": {
+              "id": 8526,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8525,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8527,
+                  "src": "221:7:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8524,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "221:7:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "220:9:72"
+            },
+            "scope": 8528,
+            "src": "173:57:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8529,
+        "src": "71:170:72",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:196:72"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.414Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

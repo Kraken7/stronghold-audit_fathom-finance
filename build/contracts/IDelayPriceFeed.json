@@ -1,0 +1,741 @@
+{
+  "contractName": "IDelayPriceFeed",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_caller",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_reason",
+          "type": "string"
+        }
+      ],
+      "name": "LogPeekPriceFailed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_caller",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_second",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogSetPriceLife",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_caller",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_second",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogSetTimeDelay",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "isPriceFresh",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isPriceOk",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "peekPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "poolId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "readPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_second",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTimeDelay",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timeDelay",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nextPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "retrivePrice",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastUpdate",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IDelayPriceFeed.PriceInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_caller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"_reason\",\"type\":\"string\"}],\"name\":\"LogPeekPriceFailed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_caller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_second\",\"type\":\"uint256\"}],\"name\":\"LogSetPriceLife\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_caller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_second\",\"type\":\"uint256\"}],\"name\":\"LogSetTimeDelay\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"isPriceFresh\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isPriceOk\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nextPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"peekPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"poolId\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"readPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"retrivePrice\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lastUpdate\",\"type\":\"uint256\"}],\"internalType\":\"struct IDelayPriceFeed.PriceInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_second\",\"type\":\"uint256\"}],\"name\":\"setTimeDelay\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"timeDelay\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/IDelayPriceFeed.sol\":\"IDelayPriceFeed\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/main/interfaces/IDelayPriceFeed.sol\":{\"keccak256\":\"0x9890967cf45a08b867e5f95c6ee589d2c4b926de432797ac70824673bc6c09ea\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://61903faa973f9ddbd52cc11dfd44dbdb55cbf94aabfe7aa50765df5c3c477d02\",\"dweb:/ipfs/QmTyb76K6uXz6vw3WTnnrvXonEzXgDMoQ6p3e5b4GTw1Lp\"]},\"project:/contracts/main/interfaces/IPriceFeed.sol\":{\"keccak256\":\"0x02edbc9306ed94f31f07175811520c3c61deeb7beab87a30a889d5387433940b\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://668c40dbd5532c503e6d462baf8604106393e56ee89d9cc5563150e29edd3622\",\"dweb:/ipfs/QmRYACJVmM9S8sP7EDhmPm7aQurYUkeK8K5hn6KcCWG7u4\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\nimport \"./IPriceFeed.sol\";\n\ninterface IDelayPriceFeed is IPriceFeed {\n    struct PriceInfo {\n        uint256 price;\n        uint256 lastUpdate;\n    }\n\n    event LogSetTimeDelay(address indexed _caller, uint256 _second);\n    \n    event LogPeekPriceFailed(address indexed _caller, string _reason);\n\n    function setTimeDelay(uint256 _second) external;\n\n    function timeDelay() external view returns (uint256);\n\n    function nextPrice() external view returns (uint256);\n\n    function retrivePrice() external view returns (PriceInfo memory);\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/IDelayPriceFeed.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/IDelayPriceFeed.sol",
+    "exportedSymbols": {
+      "IDelayPriceFeed": [
+        7728
+      ],
+      "IPriceFeed": [
+        8165
+      ]
+    },
+    "id": 7729,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7686,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:46"
+      },
+      {
+        "absolutePath": "project:/contracts/main/interfaces/IPriceFeed.sol",
+        "file": "./IPriceFeed.sol",
+        "id": 7687,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 7729,
+        "sourceUnit": 8166,
+        "src": "71:26:46",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 7688,
+              "name": "IPriceFeed",
+              "nameLocations": [
+                "128:10:46"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 8165,
+              "src": "128:10:46"
+            },
+            "id": 7689,
+            "nodeType": "InheritanceSpecifier",
+            "src": "128:10:46"
+          }
+        ],
+        "canonicalName": "IDelayPriceFeed",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7728,
+        "linearizedBaseContracts": [
+          7728,
+          8165
+        ],
+        "name": "IDelayPriceFeed",
+        "nameLocation": "109:15:46",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IDelayPriceFeed.PriceInfo",
+            "id": 7694,
+            "members": [
+              {
+                "constant": false,
+                "id": 7691,
+                "mutability": "mutable",
+                "name": "price",
+                "nameLocation": "180:5:46",
+                "nodeType": "VariableDeclaration",
+                "scope": 7694,
+                "src": "172:13:46",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7690,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "172:7:46",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7693,
+                "mutability": "mutable",
+                "name": "lastUpdate",
+                "nameLocation": "203:10:46",
+                "nodeType": "VariableDeclaration",
+                "scope": 7694,
+                "src": "195:18:46",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7692,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "195:7:46",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "PriceInfo",
+            "nameLocation": "152:9:46",
+            "nodeType": "StructDefinition",
+            "scope": 7728,
+            "src": "145:75:46",
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "eventSelector": "8c7220e16b36c16980047cfd2faf359f5a489e40edbb55fc4818907c9dde734a",
+            "id": 7700,
+            "name": "LogSetTimeDelay",
+            "nameLocation": "232:15:46",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 7699,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7696,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "_caller",
+                  "nameLocation": "264:7:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7700,
+                  "src": "248:23:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7695,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "248:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7698,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "_second",
+                  "nameLocation": "281:7:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7700,
+                  "src": "273:15:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7697,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "273:7:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "247:42:46"
+            },
+            "src": "226:64:46"
+          },
+          {
+            "anonymous": false,
+            "eventSelector": "1dad06f9b840665ab0cfae3caef238945679f3e2123bdcc11b1612a94c22d470",
+            "id": 7706,
+            "name": "LogPeekPriceFailed",
+            "nameLocation": "306:18:46",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 7705,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7702,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "_caller",
+                  "nameLocation": "341:7:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7706,
+                  "src": "325:23:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7701,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "325:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7704,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "_reason",
+                  "nameLocation": "357:7:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7706,
+                  "src": "350:14:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 7703,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "350:6:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "324:41:46"
+            },
+            "src": "300:66:46"
+          },
+          {
+            "functionSelector": "39af6ba9",
+            "id": 7711,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTimeDelay",
+            "nameLocation": "381:12:46",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7709,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7708,
+                  "mutability": "mutable",
+                  "name": "_second",
+                  "nameLocation": "402:7:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7711,
+                  "src": "394:15:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7707,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "394:7:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "393:17:46"
+            },
+            "returnParameters": {
+              "id": 7710,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "419:0:46"
+            },
+            "scope": 7728,
+            "src": "372:48:46",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "c9dec361",
+            "id": 7716,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "timeDelay",
+            "nameLocation": "435:9:46",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7712,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "444:2:46"
+            },
+            "returnParameters": {
+              "id": 7715,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7714,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7716,
+                  "src": "470:7:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7713,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "470:7:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "469:9:46"
+            },
+            "scope": 7728,
+            "src": "426:53:46",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "ef9089d6",
+            "id": 7721,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nextPrice",
+            "nameLocation": "494:9:46",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7717,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "503:2:46"
+            },
+            "returnParameters": {
+              "id": 7720,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7719,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7721,
+                  "src": "529:7:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7718,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "529:7:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "528:9:46"
+            },
+            "scope": 7728,
+            "src": "485:53:46",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "5a0e1bd9",
+            "id": 7727,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "retrivePrice",
+            "nameLocation": "553:12:46",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7722,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "565:2:46"
+            },
+            "returnParameters": {
+              "id": 7726,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7725,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7727,
+                  "src": "591:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_PriceInfo_$7694_memory_ptr",
+                    "typeString": "struct IDelayPriceFeed.PriceInfo"
+                  },
+                  "typeName": {
+                    "id": 7724,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7723,
+                      "name": "PriceInfo",
+                      "nameLocations": [
+                        "591:9:46"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7694,
+                      "src": "591:9:46"
+                    },
+                    "referencedDeclaration": 7694,
+                    "src": "591:9:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_PriceInfo_$7694_storage_ptr",
+                      "typeString": "struct IDelayPriceFeed.PriceInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "590:18:46"
+            },
+            "scope": 7728,
+            "src": "544:65:46",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7729,
+        "src": "99:512:46",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:566:46"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.408Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "contractName": "IPausable",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "pause",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unpause",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"pause\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"unpause\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/IPausable.sol\":\"IPausable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/main/interfaces/IPausable.sol\":{\"keccak256\":\"0xa2c93dbe5d4bccaa804b5642421497e9706d4be6cbfb4fcff518b67637f6bd6e\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://105aa4195468fa454e886b4f5118c76954234287b5159e955a4060fb9723d89f\",\"dweb:/ipfs/QmPgSBD3V8su42tNGky7p1XpLV8SZkHs1ymjR8ZJcrbQqN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\ninterface IPausable {\n    function pause() external;\n\n    function unpause() external;\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/IPausable.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/IPausable.sol",
+    "exportedSymbols": {
+      "IPausable": [
+        8129
+      ]
+    },
+    "id": 8130,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8122,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:58"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPausable",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 8129,
+        "linearizedBaseContracts": [
+          8129
+        ],
+        "name": "IPausable",
+        "nameLocation": "81:9:58",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8456cb59",
+            "id": 8125,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pause",
+            "nameLocation": "106:5:58",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8123,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "111:2:58"
+            },
+            "returnParameters": {
+              "id": 8124,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "122:0:58"
+            },
+            "scope": 8129,
+            "src": "97:26:58",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "3f4ba83a",
+            "id": 8128,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unpause",
+            "nameLocation": "138:7:58",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8126,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "145:2:58"
+            },
+            "returnParameters": {
+              "id": 8127,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:0:58"
+            },
+            "scope": 8129,
+            "src": "129:28:58",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8130,
+        "src": "71:88:58",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:114:58"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.412Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "contractName": "ICagable",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "LogCage",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "cage",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[],\"name\":\"LogCage\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"cage\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/main/interfaces/ICagable.sol\":\"ICagable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/main/interfaces/ICagable.sol\":{\"keccak256\":\"0xf23c3ff9cd6da78c52e3e3e33fd647c75e14a9768f54467663035219096a1d4a\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://50bee29c524030cf94c3f3c9d40365d13573ec5790e5025bc78c86da297cab5e\",\"dweb:/ipfs/QmRaejP8FBkBvQ1iG7wsZo5YiCqgUximE4iBJhHWaDzBk4\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.8.17;\n\ninterface ICagable {\n    event LogCage();\n\n    function cage() external;\n\n}\n",
+  "sourcePath": "/Users/aleksey/SolidityProjects2/fathom-stablecoin-smart-contracts/contracts/main/interfaces/ICagable.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/main/interfaces/ICagable.sol",
+    "exportedSymbols": {
+      "ICagable": [
+        7456
+      ]
+    },
+    "id": 7457,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7450,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:43"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ICagable",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7456,
+        "linearizedBaseContracts": [
+          7456
+        ],
+        "name": "ICagable",
+        "nameLocation": "81:8:43",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "eventSelector": "bf689b4aae670d200b1d2b971ace2e0c3bef88a9c5e93f36705c7b86eab630b9",
+            "id": 7452,
+            "name": "LogCage",
+            "nameLocation": "102:7:43",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 7451,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "109:2:43"
+            },
+            "src": "96:16:43"
+          },
+          {
+            "functionSelector": "69245009",
+            "id": 7455,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cage",
+            "nameLocation": "127:4:43",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7453,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "131:2:43"
+            },
+            "returnParameters": {
+              "id": 7454,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "142:0:43"
+            },
+            "scope": 7456,
+            "src": "118:25:43",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7457,
+        "src": "71:75:43",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:101:43"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.15",
+  "updatedAt": "2023-08-10T12:55:05.407Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
